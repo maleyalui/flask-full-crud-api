@@ -1,37 +1,37 @@
-### Event Management
+# Event Management
   A simple Flask REST API for managing events. This project allows you to create, update, and delete events using standard HTTP methods with JSON data. It uses an in-memory list to simulate a database.
   
- # Features
+ ## Features
     POST /events – Add a new event
     PATCH /events/<id> – Update the title of an existing event
     DELETE /events/<id> – Remove an event from the list
     Returns structured JSON with proper HTTP status codes
     Error handling for invalid requests (missing title, non-existent event)
 
- # How it works
+ ## How it works
     ```bash
     git clone <your-repo-url>
     cd flask-full-crud-api
     ```
 
- # Create a virtual enviroment:
+ ## Create a virtual enviroment:
     ```bash
     python -m venv venv
     source venv/bin/activate
     ```
 
- # Install dependancies:
+ ## Install dependancies:
     ```bash
     pip install flask
     ```
 
- # Run the Flask server:
+ ## Run the Flask server:
     ```bash
     python app.py
     ```
 
- # Examples
-   # Create Event (POST):
+ ## Examples
+   ### Create Event (POST):
       ```bash
       POST /events
       Content-Type: application/json
@@ -41,7 +41,7 @@
       }
       ```
 
-   # Update Event(PATCH):
+   ### Update Event(PATCH):
       ```bash
           PATCH /events/1
           Content-Type: application/json
@@ -51,10 +51,10 @@
           }
       ```
 
-   # Delete Event(DELETE):
+   ### Delete Event(DELETE):
       ```bash
       DELETE /events/2
       ```
 
- # Contributors
+ ## Contributors
     Luis Maleya
